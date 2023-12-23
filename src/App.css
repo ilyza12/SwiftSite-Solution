@@ -1,31 +1,212 @@
-.App {
+.sm\:hidden {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.md\:hidden {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bg-white: #ffffff;
+  --bg-white2: #ececec;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: var(--bg-white);
+  padding: 1rem 0rem;
+}
+
+main {
+  /* background: gray; */
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 3.5rem 4rem;
+
+  @media screen and (max-width: 767px) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Navbar */
+nav {
+  background-color: var(--bg-white);
+  width: 100%;
+  z-index: 50;
+  top: 0;
+  backdrop-filter: blur(10px);
+  max-width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 1rem 0rem;
+  position: fixed;
+}
+
+nav::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-image: radial-gradient(
+    circle at 8px 8px,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 8px,
+    var(--bg-white) 8px
+  );
+  bottom: -8px;
+  left: 1.5rem;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  nav::before {
+    left: 4rem;
+  }
+}
+
+nav::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-image: radial-gradient(
+    circle at 8px 8px,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 8px,
+    var(--bg-white) 8px
+  );
+  bottom: -8px;
+  right: 1.5rem;
+  position: absolute;
+  /* flip */
+  transform: scaleX(-1);
+}
+
+@media screen and (min-width: 768px) {
+  nav::after {
+    right: 4rem;
+  }
+}
+
+nav #logo {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 4rem;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 1rem;
+  }
+}
+
+nav div {
+  width: 100%;
+}
+
+nav #mdnavbarcontent ul {
+  display: flex;
+  gap: 10px;
+  padding: 0rem;
+  margin: 0;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  list-style-type: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+nav #menu {
+  font-size: 1rem;
+  width: auto;
+  margin-left: auto;
+  background: green;
 }
 
-.heart {
-  color: #ff0000;
+nav #menu button {
+  padding: 0.3rem;
+  margin-right: 0;
+  position: relative;
+  z-index: 100;
 }
 
-.small {
-  font-size: 0.75rem;
+nav #menu svg {
+  width: 12px;
+  height: 12px;
+}
+
+#smnavbarcontent {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  text-align: left;
+}
+/* Navbar */
+
+#hero,
+#about,
+#services,
+#gallery {
+  scroll-margin-top: 3.2rem;
+}
+
+/* Hero */
+
+#hero {
+  border-radius: 8px;
+  background: var(--bg-white2);
+  height: 100vh;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#hero #container {
+  /* background: lightgray; */
+  max-width: 56rem;
+  margin: auto;
+}
+
+#hero #container div:nth-child(2) {
+  text-align: center;
+}
+
+/* Hero */
+
+#about {
+  background: lightgray;
+  height: 100vh;
 }

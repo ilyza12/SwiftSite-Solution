@@ -1,7 +1,3 @@
-export default function Team (){
-    return (
-        <div>
-        Team
-        </div>
-    )
-};
+export default function Team() {
+  return <div id="team">Team</div>;
+}
