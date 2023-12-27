@@ -19,9 +19,8 @@ const Testimonials = () => {
     return () => clearInterval(interval); // Clear interval on component unmount
   }, [testimonials]);
 
-  return <p>Testis</p>;
   return (
-    <div>
+    <div id="testimonials">
       <h2 className="testimonial-header">Testimonials</h2>
       <div className="testimonials-container">
         <div className="testimonials" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

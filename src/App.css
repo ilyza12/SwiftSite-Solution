@@ -232,7 +232,7 @@ nav #menu svg {
 #about,
 #services,
 #gallery {
-  scroll-margin-top: 5.8rem;
+  scroll-margin-top: 3rem;
 }
 
 /* Hero */
@@ -448,7 +448,8 @@ nav #menu svg {
 
 .testimonials-container {
   position: relative;
-  overflow: visible;
+  /* overflow: visible; */
+  overflow-x: hidden;
   white-space: nowrap;
   width: 100%;
   max-width: 800px;

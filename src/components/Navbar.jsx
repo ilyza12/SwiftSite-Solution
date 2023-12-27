@@ -1,20 +1,38 @@
 const NavbarContent = () => {
+  const data = [
+    {
+      title: "Home",
+      href: "#hero",
+    },
+    {
+      title: "About",
+      href: "#about",
+    },
+    {
+      title: "Services",
+      href: "#services",
+    },
+    {
+      title: "Gallery",
+      href: "#gallery",
+    },
+    {
+      title: "Testimonials",
+      href: "#testimonials",
+    },
+    {
+      title: "Contact",
+      href: "#contact",
+    },
+  ];
+
   return (
     <ul>
-      <li>
-        <a href="#hero" aria-current="page">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#services">Services</a>
-      </li>
-      <li>
-        <a href="#gallery">Gallery</a>
-      </li>
+      {data.map((item, i) => (
+        <li>
+          <a href={item.href}>{item.title}</a>
+        </li>
+      ))}
     </ul>
   );
 };
@@ -47,7 +65,7 @@ export default function Navbar() {
           <NavbarContent />
         </div>
         <div>
-          <p>Login</p>
+          <button class="button">Login</button>
         </div>
         <div className="md:hidden" id="menu">
           <button
