@@ -443,3 +443,118 @@ nav #menu svg {
     color: black; /* TODO: change color to match theme later */
   }
 }
+/* Testimonials */
+#testimonials {
+  background-color: #f5f5f5; /* Adjust background color */
+  padding: 3rem; /* Adjust padding */
+  margin-bottom: 120px;
+}
+
+.testimonials-container {
+  position: relative;
+  overflow: visible;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 5px solid #001f47;
+  border-radius: 20px; /* Adjust for smooth edges */
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 150px;
+}
+.testimonial p {
+  font-weight: bold; /* Make the testimony text bold */
+}
+
+.author {
+  font-style: italic; /* Make the author name italic */
+  font-family: Calibri, sans-serif;
+  font-weight: 300;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px; /* Adjust the height of the progress bar */
+  background-color: transparent; /* Set background to transparent */
+  width: 100%; /* Initial width of the progress bar */
+  transition: width 5s linear; /* Adjust the duration of the progress bar animation */
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #002347 50%, transparent 100%);
+  background-size: 10px 5px; /* Adjust the size of the dots (width spacing) */
+}
+.testimonial-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  color: #000000; /* Adjust the color as needed */
+}
+
+/* Footer */
+
+footer {
+  background-color: #002347;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  margin-top: 140px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: column;
+}
+
+.contact-us {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.contact-us h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.contact-us p {
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.copyright {
+  margin-top: auto;
+}
+
+.copyright p {
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+  color: white;
+}
