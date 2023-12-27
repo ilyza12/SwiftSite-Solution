@@ -19,6 +19,7 @@ const Testimonials = () => {
     return () => clearInterval(interval); // Clear interval on component unmount
   }, [testimonials]);
 
+  return <p>Testis</p>;
   return (
     <div>
       <h2 className="testimonial-header">Testimonials</h2>
@@ -31,11 +32,13 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="progress-bar" style={{ width: `${((currentIndex + 1) / testimonials.length) * 100}%` }}></div>
+        <div
+          className="progress-bar"
+          style={{ width: `${((currentIndex + 1) / testimonials.length) * 100}%` }}
+        ></div>
       </div>
     </div>
   );
 };
 
 export default Testimonials;
-

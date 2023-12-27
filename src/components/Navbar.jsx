@@ -34,40 +34,45 @@ export default function Navbar() {
       <div id="smnavbarcontent">
         <NavbarContent />
       </div>
-
-      <a href="https://flowbite.com/" id="logo">
-        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-        <p style={{ whiteSpace: "nowrap" }}>Group 22</p>
-      </a>
-      <div id="mdnavbarcontent" className="sm:hidden">
-        <NavbarContent />
-      </div>
-      <div>
-        <p>Login</p>
-      </div>
-      <div className="md:hidden" id="menu">
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-          onClick={toggleMenu}
-        >
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+      <div id="nav_content">
+        <a href="https://flowbite.com/" id="logo">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            className="h-8"
+            alt="Flowbite Logo"
+          />
+          <p style={{ whiteSpace: "nowrap" }}>Group 22</p>
+        </a>
+        <div id="mdnavbarcontent" className="sm:hidden">
+          <NavbarContent />
+        </div>
+        <div>
+          <p>Login</p>
+        </div>
+        <div className="md:hidden" id="menu">
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+            onClick={toggleMenu}
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </nav>
   );
