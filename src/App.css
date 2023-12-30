@@ -449,8 +449,8 @@ nav #menu svg {
 .testimonials-container {
   position: relative;
   /* overflow: visible; */
-  overflow-x: hidden;
-  white-space: nowrap;
+  overflow: scroll;
+  white-space: normal;
   width: 100%;
   max-width: 800px;
   margin: auto;
@@ -483,27 +483,6 @@ nav #menu svg {
   font-style: italic; /* Make the author name italic */
   font-family: Calibri, sans-serif;
   font-weight: 300;
-}
-
-.progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 5px; /* Adjust the height of the progress bar */
-  background-color: transparent; /* Set background to transparent */
-  width: 100%; /* Initial width of the progress bar */
-  transition: width 5s linear; /* Adjust the duration of the progress bar animation */
-}
-
-.progress-bar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(90deg, #002347 50%, transparent 100%);
-  background-size: 10px 5px; /* Adjust the size of the dots (width spacing) */
 }
 .testimonial-header {
   font-size: 2rem;
