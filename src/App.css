@@ -650,6 +650,11 @@ footer {
 	border-radius: 50%;
 }
 
+.team-title {
+  font-size: 32px;
+}
+
+
 .team-row {
   display: flex;
   flex-wrap: wrap;
@@ -673,6 +678,32 @@ footer {
     flex: 0 0 100%;
     margin: 10px 0;
   }
+}
+
+
+/*About*/
+.about-white {
+  background: #fff;
+  padding: 70px 0;
+}
+
+.about {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about-title {
+  font-size: 32px; 
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-subtitle {
+  font-size: 18px; 
+  line-height: 1.6;
+  color: #333;
 }
 
 
