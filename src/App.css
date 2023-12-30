@@ -534,3 +534,42 @@ footer {
   margin: 0.5rem 0;
   color: white;
 }
+
+/* Gallery */
+
+#gallery {
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+.gallery_section {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin: 5% 5%;
+}
+
+.gallery_grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap:10px;
+  column-gap: 20px;
+}
+
+.gallery_text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding: 0 1.5rem;
+  color:#000;
+}
+
+.gallery_image {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
