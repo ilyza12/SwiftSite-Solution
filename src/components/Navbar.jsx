@@ -29,9 +29,9 @@ const NavbarContent = () => {
   return (
     <ul>
       {data.map((item, i) => (
-        <li>
-          <a href={item.href}>{item.title}</a>
-        </li>
+        <a href={item.href}>
+          <li>{item.title}</li>
+        </a>
       ))}
     </ul>
   );
@@ -49,9 +49,6 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div id="smnavbarcontent">
-        <NavbarContent />
-      </div>
       <div id="nav_content">
         <a href="https://flowbite.com/" id="logo">
           <img
@@ -64,15 +61,18 @@ export default function Navbar() {
         <div id="mdnavbarcontent" className="sm:hidden">
           <NavbarContent />
         </div>
-        <div>
-          <button class="button">Login</button>
+        <div className="sm:hidden">
+          <button class="button3">Login</button>
         </div>
+
+        {/* small viewport */}
         <div className="md:hidden" id="menu">
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
             aria-controls="navbar-sticky"
             aria-expanded="false"
+            title="Menu button"
             onClick={toggleMenu}
           >
             <svg
@@ -90,6 +90,13 @@ export default function Navbar() {
               />
             </svg>
           </button>
+        </div>
+      </div>
+
+      <div id="smnavbarcontent">
+        <NavbarContent />
+        <div>
+          <button class="button3">Login</button>
         </div>
       </div>
     </nav>

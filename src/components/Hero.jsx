@@ -1,8 +1,10 @@
+import Affiliated from "./Affiliated";
+
 export default function Hero() {
   return (
     <div id="hero">
       <div id="container">
-        <div id="container__content" class="md:flex justify-between items-center">
+        <div id="container__content" class="justify-between items-center">
           <div id="left-side">
             <p id="info">New and improved</p>
             <h1 class="">
@@ -15,7 +17,7 @@ export default function Hero() {
               tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
               authentic tumeric truffaut hexagon try-hard chambray.
             </p>
-            <div class="flex gap-4 justify-center md:justify-left">
+            <div class="flex gap-4 justify-center">
               <button class="button">Button Now</button>
               <button class="button2">Do what it says</button>
             </div>
@@ -31,6 +33,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <Affiliated />
     </div>
   );
 }
