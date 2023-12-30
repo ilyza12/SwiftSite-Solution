@@ -50,7 +50,7 @@ export default function Navbar() {
   return (
     <nav>
       <div id="nav_content">
-        <a href="https://flowbite.com/" id="logo">
+        <a href="#hero" id="logo">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
