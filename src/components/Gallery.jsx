@@ -15,7 +15,7 @@ const Gallery = () => {
   return (
     <div id='gallery'>
     <div className='gallery_section'>
-      <h1 className='gallery_text'>My Gallery</h1>
+      <h1 className='gallery_text'>Gallery</h1>
       <div className='gallery_grid'>
         {images.map((image, index) => (
           <img
