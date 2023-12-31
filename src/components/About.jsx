@@ -43,12 +43,10 @@ function About() {
             </ul>
           </div>
         </div>
-        <div className="about-video">
+        <div className="about-video-wrapper">
           <iframe
             title="Corporate Video"
             src="https://www.youtube.com/embed/iyd7qUH3oH0?si=Fx4LrtfagFZFP_bh"
-            width="760" 
-            height="415"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
