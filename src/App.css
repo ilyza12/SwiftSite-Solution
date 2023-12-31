@@ -723,7 +723,7 @@ footer {
 }
 
 .team-item h3 {
-  margin: 20px 0 1px 0 !important;
+  margin: 20px 0 1px 0;
   color: #454545;
   font-size: 18px;
   font-weight: 700;
@@ -747,8 +747,12 @@ footer {
 }
 
 .team-info p {
-  color: #acacac;
+  color: #292929 ease-in-out;
   font-style: italic;
+}
+
+.team-item:hover .team-info p{
+  color: #ffffff 0.25s ease-in-out;
 }
 
 .team-info::after {
@@ -818,8 +822,97 @@ footer {
   margin-bottom: 30px;
 }
 
+.about-icon {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  align-self: flex-start;
+}
+
 .about-subtitle {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
 }
+
+.about-mission {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+
+.about-title-mission{
+  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.about-subtitle-mission{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+.about-vision{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-direction: row-reverse; 
+}
+
+.about-title-vision{
+  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.about-subtitle-vision{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+.about-values {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+
+.about-title-values{
+  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.about-subtitle-values{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    width: 100%;
+  }
+}
+
+
