@@ -1,34 +1,50 @@
 import React from 'react';
 
 const Gallery = () => {
-  // Array of image sources
-  const images = [
-    '/img/service.webp',
-    '/img/service.webp',
-    '/img/service.webp',
-    '/img/service.webp',
-    '/img/service.webp',
-    '/img/service.webp',
-
-  ];
-
   return (
     <div id='gallery'>
-    <div className='gallery_section'>
-      <h1 className='gallery_text'>Gallery</h1>
-      <div className='gallery_grid'>
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Image ${index + 1}`}
-            className='gallery_image'
-          />
-        ))}
+     
+      <div className='gallery_heading'>
+        <h1>Photo <span>Gallery</span></h1>
+      </div>
+    <div className='gallery_container'>
+      <div className='gal_container'>
+        <div className='gal_text'>
+          <h2>Text inside here</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum,
+                  voluptate quidem, quod, quae officiis</p>
+        </div>
+        <div className='gal_img'>
+          <img src='/img/service.webp' alt='Gallery image'/>
+        </div>
+      </div>
+
+      <div className='gal_container'>
+      <div className='gal_img'>
+          <img src='/img/service.webp' alt='Gallery image'/>
+        </div>
+      <div className='gal_text'>
+          <h2>Text inside here</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum,
+                  voluptate quidem, quod, quae officiis</p>
+        </div>
+      </div>
+
+      <div className='gal_container'>
+        <div className='gal_text'>
+          <h2>Text inside here</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum,
+                  voluptate quidem, quod, quae officiis</p>
+        </div>
+        <div className='gal_img'>
+          <img src='/img/service.webp' alt='Gallery image'/>
+        </div>
+      </div>
       </div>
     </div>
-    </div>
+
   );
 };
 
 export default Gallery;
+
