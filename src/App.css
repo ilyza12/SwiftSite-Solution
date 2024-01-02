@@ -666,7 +666,7 @@ footer {
   padding: 1rem;
 }
 
-.gallery_container{
+.gallery_container {
   width: 90%;
   display: flex;
   flex-direction: column; /* Optional: If you want to center vertically in a column */
@@ -675,7 +675,7 @@ footer {
   margin: 0 auto;
 }
 
-.gallery_heading h1{
+.gallery_heading h1 {
   font-size: 3rem;
   font-weight: bold;
   border-bottom: 2px solid #ffffff;
@@ -692,13 +692,12 @@ footer {
   text-align: center;
 }
 
-.gallery_heading h1 span{
+.gallery_heading h1 span {
   font-weight: 100;
   font-size: 3rem;
-  color:#79aef8;
-  font-family:brush script mt;
+  color: #79aef8;
+  font-family: brush script mt;
 }
-
 
 .gal_img {
   flex: 1;
@@ -708,12 +707,10 @@ footer {
   justify-content: center; /* Center horizontally */
 }
 
-
 .gal_img img {
   width: 70%;
   height: auto;
   transition: box-shadow 0.3s ease-in-out;
-
 }
 
 .gal_img img:hover {
@@ -721,24 +718,23 @@ footer {
 }
 
 .gal_container {
-    column-width: 250px;
-    display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+  column-width: 250px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gal_text {
-    flex: 1;
-    column-width: 10%;
-    height: 50%;
-    font-size: large;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+  flex: 1;
+  column-width: 10%;
+  height: 50%;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 .gal_text h2 {
@@ -759,7 +755,7 @@ footer {
 
 /*mobile view*/
 @media only screen and (max-width: 600px) {
-  .gal_container{
+  .gal_container {
     column-gap: 10px;
     width: 100%;
   }
@@ -771,7 +767,8 @@ footer {
     text-align: center;
   }
 
-  .gallery_heading h1, .gallery_heading h1 span{
+  .gallery_heading h1,
+  .gallery_heading h1 span {
     font-size: 30px;
   }
 
@@ -804,7 +801,6 @@ footer {
     width: 100%;
     height: auto;
   }
-
 }
 
 /*Team*/
@@ -860,7 +856,7 @@ footer {
   font-style: italic;
 }
 
-.team-item:hover .team-info p{
+.team-item:hover .team-info p {
   color: #ffffff 0.25s ease-in-out;
 }
 
@@ -878,12 +874,21 @@ footer {
 }
 
 .team-img {
-  max-width: 140px;
-  padding: 6px 6px;
+  width: 140px;
+  height: 140px;
   background-color: #dedede;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .team-title {
@@ -952,41 +957,39 @@ footer {
   margin-bottom: 30px;
 }
 
-.about-title-mission{
+.about-title-mission {
   text-align: left;
   font-size: 30px;
   font-style: italic;
 }
 
-.about-subtitle-mission{
+.about-subtitle-mission {
   text-align: justify;
   text-justify: inter-word;
   font-size: 20px;
   margin-right: 20px;
 }
 
-
-.about-vision{
+.about-vision {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
 }
 
-.about-title-vision{
+.about-title-vision {
   text-align: left;
   font-size: 30px;
   font-style: italic;
 }
 
-.about-subtitle-vision{
+.about-subtitle-vision {
   text-align: justify;
   text-justify: inter-word;
   font-size: 20px;
   margin-right: 20px;
 }
-
 
 .about-values {
   display: flex;
@@ -996,21 +999,19 @@ footer {
   margin-bottom: 30px;
 }
 
-.about-title-values{
+.about-title-values {
   text-align: left;
   font-size: 30px;
   font-style: italic;
   margin-left: 20px;
 }
 
-.about-subtitle-values{
+.about-subtitle-values {
   text-align: justify;
   text-justify: inter-word;
   font-size: 20px;
   margin-right: 20px;
 }
-
-
 
 @media screen and (max-width: 768px) {
   .about {
@@ -1038,6 +1039,3 @@ footer {
   width: 100%;
   height: 100%;
 }
-
-
-

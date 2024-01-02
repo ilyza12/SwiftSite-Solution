@@ -4,29 +4,34 @@ const teamMembers = [
   {
     name: "HARITH",
     role: "CEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     name: "AMMAR",
     role: "CTO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     name: "NORHAZIRA",
     role: "Marketing Manager",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 
   {
     name: "ILYZA",
     role: "Business Analyst",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 
   {
     name: "DANISH",
     role: "Software engineer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
 
@@ -44,7 +49,10 @@ function Team() {
           {teamMembers.map((member, index) => (
             <div key={index} className="team-col">
               <div className="team-item">
-                <img src={`./img/${member.name.toLowerCase()}.jpg`} className="team-img" alt={member.name} />
+                <div class="team-img">
+                  <img src={`./img/${member.name.toLowerCase()}.jpg`} alt={member.name} />
+                </div>
+
                 <h3>{member.name}</h3>
                 <div className="team-info">
                   <p>{member.role}</p>
@@ -58,6 +66,5 @@ function Team() {
     </section>
   );
 }
-
 
 export default Team;
