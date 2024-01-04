@@ -563,62 +563,108 @@ nav #menu svg {
     color: black; /* TODO: change color to match theme later */
   }
 }
+
 /* Testimonials */
+
 #testimonials {
-  background-color: #f5f5f5; /* Adjust background color */
-  padding: 3rem; /* Adjust padding */
+  background-color: #ffffff;
+  padding: 3rem;
   margin-bottom: 120px;
 }
 
 .testimonials-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column; /* Optional: If you want to center vertically in a column */
+  align-items: center; /* Center vertically */
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
   position: relative;
-  /* overflow: visible; */
-  overflow: scroll;
-  white-space: normal;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 20px;
 }
 
 .testimonials {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
+  width: 100%; /* Use percentage to ensure responsiveness */
 }
 
 .testimonial {
-  flex: 0 0 300px;
-  min-width: 100%;
   box-sizing: border-box;
-  background-color: #fff;
+  flex: 0 0 100%; /* Set each testimonial to occupy 100% width */
+  background-color: #001f47;
   border: 5px solid #001f47;
-  border-radius: 20px; /* Adjust for smooth edges */
+  border-radius: 20px;
   padding: 20px;
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 150px;
+  width: 100%;
+  max-width: 100%; /* Ensure testimonials don't exceed the screen width */
 }
-.testimonial p {
-  font-weight: bold; /* Make the testimony text bold */
+
+.testimonial img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  padding: 0 50px; /* Adjust the padding as needed */
+  text-align: center;
+  font-style: italic;
+  color: white;
+  word-wrap: break-word;
+  white-space: pre-line;
+  margin: 10px; /* Add margin for better spacing */
 }
 
 .author {
-  font-style: italic; /* Make the author name italic */
+  font-style: italic;
   font-family: Calibri, sans-serif;
   font-weight: 300;
+  margin-top: 10px;
+  font-size: 1rem; /* Adjust the font size for the author's name */
+  color: white;
 }
+
+.position {
+  font-size: 0.8rem;
+  color: white;
+}
+
 .testimonial-header {
   font-size: 2rem;
   font-weight: bold;
-  text-align: left;
-  margin-bottom: 20px; /* Adjust the margin as needed */
-  color: #000000; /* Adjust the color as needed */
+  text-align: center; /* Center the name at the top */
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem; /* Use percentage or rem consistently */
+}
+
+.arrow {
+  font-size: 20px;
+  cursor: pointer;
+  color: #001f47;
+  padding: 10px; /* Add padding to create space between arrows */
+  margin: 0 5px; /* Add margin to create space between arrows */
+}
+
+@media (max-width: 768px) {
+  .testimonials-container {
+    column-gap: 10px;
+    width: 100%;
+  }
 }
 
 /* Footer */
 
-footer {
+.footer {
   background-color: #002347;
   padding: 2rem;
   text-align: center;
@@ -630,23 +676,67 @@ footer {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
-  justify-content: column;
+  flex-direction: column;
 }
 
-.contact-us {
+.contact-us,
+.subscribe,
+.connect-with-us {
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.contact-us h2 {
+.contact-us h2,
+.subscribe h2,
+.connect-with-us h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: white;
+  font-family: 'Caveat';
+  font-weight: 600;
 }
 
-.contact-us p {
+.contact-us p,
+.subscribe p,
+.connect-with-us p {
   margin: 0.5rem 0;
   color: white;
+  font-family: 'Saira condensed';
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.subscribe-input {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: #ffffff00;
+  color: white;
+}
+
+.subscribe-arrow {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff00;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  user-select: none;
+  margin-left: -1.8rem;
+}
+
+.subscribe-arrow:hover {
+  background-color: #002347;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .copyright {
@@ -657,6 +747,33 @@ footer {
   font-size: 0.7rem;
   margin: 0.5rem 0;
   color: white;
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Saira condensed';
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-us,
+  .subscribe,
+  .connect-with-us {
+    width: 30%;
+    padding: 5px 20px 10px;
+    margin-left: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    /*margin-top: 40px; /* Adjust the top margin to reduce space */
+    width: 100%;
+    margin-top: 170px;
+    margin-left: -1000px;
+  }
 }
 
 /* Gallery */
