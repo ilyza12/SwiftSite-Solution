@@ -46,7 +46,7 @@ function About() {
         <div className="about-video-wrapper">
           <iframe
             title="Corporate Video"
-            src="https://www.youtube.com/embed/iyd7qUH3oH0?si=Fx4LrtfagFZFP_bh"
+            src="https://www.youtube.com/embed/QyhwSYhX09s?si=zxwNxJkVwt8P_Rgf"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>

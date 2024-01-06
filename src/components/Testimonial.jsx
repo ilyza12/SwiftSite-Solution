@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([
-    { content: "[Company Name] industry impact and unwavering dedication to customer satisfaction set them apart", author: "Hannah Schmitz", position: "Media Personnel", photo: "/img/Hannah Scmitz CAT201.webp" },
-    { content: "Fast and reliable service. Highly recommended!", author: "Charles Leclerc", position: "Customer", photo: "/img/Charles Leclerc CAT201.webp" },
-    { content: "Exceptional service—quick, professional, and hassle-free.", author: "Daniel Ricciardo", position: "Customer", photo: "/img/Daniel Ricciardo CAT201.webp" },
-    { content: "The positive work culture and emphasis on growth create an environment where I can thrive. Proud to contribute to our shared success.", author: "Susie Wolff", position: "Employee", photo: "/img/Sussie Wolff CAT201.webp" },
+    { content: "I can't thank enough for their outstanding IT consulting services. Their team's insights and strategic guidance have been invaluable in streamlining our technology infrastructure. They took the time to understand our unique needs and delivered solutions that exceeded our expectations. Highly recommended for any business looking to leverage technology for growth.", author: "Hannah Amira", position: "Small Business Owner", photo: "/img/testimoni_girl.jpg" },
+    { content: "Working with this company has been a game-changer for our business. Their expertise in web development not only transformed our online presence but also significantly improved user engagement. The team's dedication to quality and innovation sets them apart. We're thrilled with the results and look forward to future collaborations.", author: "Marlianti", position: "Art Gallery Owner", photo: "/img/testimoni_girl.jpg" },
+    { content: "I'm incredibly pleased with the web design services provided by this company. The team's attention to detail and creativity truly brought my vision to life. The website is not only visually appealing but also user-friendly. Working with them was a breeze, and the final result exceeded my expectations. Highly recommended", author: "Daniel Ricciardo", position: "Food Review Blogger", photo: "/img/testimoni_boy.jpg" },
+    { content: "Huge shoutout to this company for their exceptional web design work! They took our ideas and turned them into a sleek, modern website that perfectly represents our brand. The team was responsive, professional, and delivered on time. Our online presence has received a significant boost, and we're thrilled with the results. If you need top-notch web design, look no further!", author: "Song Kang", position: "Online Business Owner", photo: "/img/testimoni_boy.jpg" },
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +24,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div>
+    <div className="testimonial_div" id="testimonials">
       <h2 className="testimonial-header">Testimonials</h2>
       <div className="testimonials-container">
         <div className="testimonials" style={{ transform: calculateTransformValue() }}>

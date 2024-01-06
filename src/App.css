@@ -463,13 +463,13 @@ nav #menu svg {
   font-weight: bold;
   margin-bottom: 1rem;
   margin-top: 0;
-  text-align: left;
+  text-align: center;
   padding: 0 1.5rem;
 }
 
 .service__content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   padding: 1rem;
 }
@@ -478,8 +478,8 @@ nav #menu svg {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 3fr 0fr;
+  gap: 0;
   justify-content: center;
 }
 
@@ -517,9 +517,19 @@ nav #menu svg {
 }
 
 .service__img {
-  width: 90%;
+  width: 100%;
   height: 100%;
   object-fit: contain;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.service__img__container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 @media only screen and (max-width: 425px) {
@@ -572,6 +582,10 @@ nav #menu svg {
   margin-bottom: 120px;
 }
 
+.testimonial_div{
+  padding-top: 2rem;
+}
+
 .testimonials-container {
   width: 90%;
   display: flex;
@@ -592,8 +606,8 @@ nav #menu svg {
 .testimonial {
   box-sizing: border-box;
   flex: 0 0 100%; /* Set each testimonial to occupy 100% width */
-  background-color: #001f47;
-  border: 5px solid #001f47;
+  background-color: #afd2ff;
+  border: 2px solid #001f47;
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
@@ -613,7 +627,7 @@ nav #menu svg {
   padding: 0 50px; /* Adjust the padding as needed */
   text-align: center;
   font-style: italic;
-  color: white;
+  color: rgb(12, 12, 12);
   word-wrap: break-word;
   white-space: pre-line;
   margin: 10px; /* Add margin for better spacing */
@@ -625,12 +639,12 @@ nav #menu svg {
   font-weight: 300;
   margin-top: 10px;
   font-size: 1rem; /* Adjust the font size for the author's name */
-  color: white;
+  color:rgb(12, 12, 12);
 }
 
 .position {
   font-size: 0.8rem;
-  color: white;
+  color: rgb(12, 12, 12);
 }
 
 .testimonial-header {
@@ -659,6 +673,16 @@ nav #menu svg {
   .testimonials-container {
     column-gap: 10px;
     width: 100%;
+  }
+  .testimonial-text {
+    padding: 0 50px; /* Adjust the padding as needed */
+    text-align: center;
+    font-style: italic;
+    color: rgb(12, 12, 12);
+    word-wrap: break-word;
+    white-space: pre-line;
+    font-size: 14px;
+    margin: 10px; /* Add margin for better spacing */
   }
 }
 
@@ -827,6 +851,7 @@ nav #menu svg {
 .gal_img img {
   width: 70%;
   height: auto;
+  border-radius: 10px;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -862,11 +887,9 @@ nav #menu svg {
 }
 
 .gal_text p {
-  font-family: garamond;
   color: white;
   text-align: center;
-  font-size: 20px;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -890,16 +913,15 @@ nav #menu svg {
   }
 
   .gal_text h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .gal_text p {
-    font-family: garamond;
     color: white;
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #gallery {
@@ -1134,11 +1156,86 @@ nav #menu svg {
   .about {
     width: 90%;
   }
+  .about-title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    align-self: flex-start;
+  }
+  
+  .about-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .about-title-mission {
+    text-align: left;
+    font-size: 25px;
+    font-style: italic;
+  }
+  
+  .about-subtitle-mission {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  .about-vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-direction: row-reverse;
+  }
+  
+  .about-title-vision {
+    text-align: left;
+    font-size: 25px;
+    font-style: italic;
+  }
+  
+  .about-subtitle-vision {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  .about-values {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+  }
+  
+  .about-title-values {
+    text-align: left;
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 20px;
+  }
+  
+  .about-subtitle-values {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
   .about {
-    width: 100%;
+    width: 90%;
   }
 }
 
