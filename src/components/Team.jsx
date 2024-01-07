@@ -5,38 +5,38 @@ const teamMembers = [
     name: "HARITH",
     role: "CEO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Responsible for making crucial corporate decisions, overseeing overall operations, and ensuring the company's strategic goals are met.",
   },
   {
     name: "AMMAR",
     role: "CTO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Plays a pivotal role in developing and implementing the company's technology strategy and overseeing the technical aspects of product development.",
   },
   {
     name: "NORHAZIRA",
     role: "Marketing Manager",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Responsible for leading the marketing team in developing and executing effective strategies, analyzing market trends and customer behavior to make informed marketing decisions.",
   },
 
   {
     name: "ILYZA",
     role: "Business Analyst",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Responsible for working closely with various departments to gather and analyze data for informed decision-making.",
   },
 
   {
     name: "DANISH",
     role: "Software engineer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Designs, develops, and maintains software systems and collaborates with the development team to create high-quality, efficient, and scalable software solutions.",
   },
 ];
 
 function Team() {
-  let message = `There are many variations of passages of Lorem Ipsum available but the \n majority have suffered alteration in some injected humour.`;
+  let message = `Get to know the dynamic individuals who power our team! Each member brings unique skills and expertise, contributing to a collaborative and innovative environment. Meet the faces behind our success and discover the passion that drives us to exceed expectations.`;
 
   return (
     <section className="team-white">
