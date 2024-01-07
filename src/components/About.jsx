@@ -26,8 +26,8 @@ function About() {
           <div>
             <h3 className="about-title-vision">Vision</h3>
             <p className="about-subtitle-vision">
-              Our vision is to be a global leader in XYZ services, known for exceptional customer service,
-              innovative solutions, and a strong commitment to sustainability and positive societal impact.
+              Our vision is to be a global leader in IT services, known for for our outstanding service,
+              innovative solutions, and a strong commitment to sustainability and positive impact.
             </p>
           </div>
         </div>
