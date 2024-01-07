@@ -16,8 +16,8 @@ export default function Hero() {
             where innovation meets design excellence. Transform your digital presence with our cutting-edge solutions, tailored to elevate your brand and captivate your audience.
             </p>
             <div class="flex gap-4 justify-center">
-              <button class="button">Button Now</button>
-              <button class="button2">Do what it says</button>
+              <button class="button">Get Started</button>
+              <button class="button2">Learn More</button>
             </div>
           </div>
           <div id="right-side">
