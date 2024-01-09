@@ -8,12 +8,12 @@ export default function Hero() {
           <div id="left-side">
             <p id="info">New and elegant</p>
             <h1 class="">
-              Unlock your idea, where
+              SwiftSite
               <br class="hidden lg:inline-block" />
-              <span class="highlight">creativity</span> meets digital brilliance
+              <span class="highlight">Solutions</span> 
             </h1>
             <p id="description">
-            where innovation meets design excellence. Transform your digital presence with our cutting-edge solutions, tailored to elevate your brand and captivate your audience.
+            Where innovation meets design excellence. Transform your digital presence with our cutting-edge solutions, tailored to elevate your brand and captivate your audience.
             </p>
             <div class="flex gap-4 justify-center">
               <button class="button">Get Started</button>
@@ -26,7 +26,7 @@ export default function Hero() {
               alt="hero"
               width="100%"
               height="100%"
-              src="/img/img.png"
+              src="/img/Web Design CAT201.webp"
             />
           </div>
         </div>
@@ -35,3 +35,4 @@ export default function Hero() {
     </div>
   );
 }
+           
