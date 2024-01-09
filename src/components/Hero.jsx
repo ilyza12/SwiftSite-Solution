@@ -9,8 +9,7 @@ export default function Hero() {
             <p id="info">New and elegant</p>
             <h1 class="">
               SwiftSite
-              <br class="hidden lg:inline-block" />
-              <span class="highlight">Solutions</span> 
+              <span class="highlight"> Solutions</span> 
             </h1>
             <p id="description">
             Where innovation meets design excellence. Transform your digital presence with our cutting-edge solutions, tailored to elevate your brand and captivate your audience.
