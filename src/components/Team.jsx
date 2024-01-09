@@ -2,16 +2,16 @@ import React from "react";
 
 const teamMembers = [
   {
-    name: "HARITH",
-    role: "CEO",
-    description:
-      "Responsible for making crucial corporate decisions, overseeing overall operations, and ensuring the company's strategic goals are met.",
-  },
-  {
     name: "AMMAR",
     role: "CTO",
     description:
       "Plays a pivotal role in developing and implementing the company's technology strategy and overseeing the technical aspects of product development.",
+  },
+  {
+    name: "HARITH",
+    role: "CEO",
+    description:
+      "Responsible for making crucial corporate decisions, overseeing overall operations, and ensuring the company's strategic goals are met.",
   },
   {
     name: "NORHAZIRA",
