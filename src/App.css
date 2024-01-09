@@ -449,7 +449,7 @@ nav #menu svg {
 /* Hero */
 
 #about {
-  background: lightgray;
+  background: #0c2d4e;
 }
 
 /* Service */
@@ -1058,7 +1058,7 @@ nav #menu svg {
 
 /*About*/
 .about-white {
-  background: #fff;
+  background-color: #002347;
   padding: 70px 0;
 }
 
@@ -1073,169 +1073,113 @@ nav #menu svg {
   font-size: 32px;
   text-align: center;
   margin-bottom: 30px;
+  color: #79aef8;
 }
 
 .about-icon {
   width: 150px;
   height: 150px;
-  margin-right: 20px;
-  align-self: flex-start;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2d4e !important;
 }
 
 .about-subtitle {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
+  font-family: garamond;
+  font-weight: 600;
 }
 
 .about-mission {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  margin-bottom: 30px;
-}
-
-.about-title-mission {
-  text-align: left;
-  font-size: 30px;
-  font-style: italic;
-}
-
-.about-subtitle-mission {
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-.about-vision {
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  flex-direction: row-reverse;
 }
 
-.about-title-vision {
-  text-align: left;
+.about-title-mission{
+  text-align: center;
   font-size: 30px;
   font-style: italic;
+  color: #79aef8;
 }
 
-.about-subtitle-vision {
-  text-align: justify;
-  text-justify: inter-word;
+.about-subtitle-mission{
+  text-align: center;
   font-size: 20px;
   margin-right: 20px;
+  color: white;
+  font-family: garamond;
+  font-weight: 600;
 }
+
+
+.about-vision{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; 
+}
+
+.about-title-vision{
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  color: #79aef8;
+}
+
+.about-subtitle-vision{
+  text-align: center;
+  font-size: 20px;
+  margin-right: 20px;
+  color: white;
+  font-family: garamond;
+  font-weight: 600;
+}
+
 
 .about-values {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-.about-title-values {
-  text-align: left;
+.about-title-values{
+  text-align: center;
   font-size: 30px;
   font-style: italic;
-  margin-left: 20px;
+  color: #79aef8;
 }
 
-.about-subtitle-values {
+.about-subtitle-values{
   text-align: justify;
   text-justify: inter-word;
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 20px;
+  color: white;
+  font-family: garamond;
+  font-weight: 600;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .about {
     width: 90%;
   }
-  .about-title {
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .about-icon {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    align-self: flex-start;
-  }
-  
-  .about-subtitle {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-
-  .about-title-mission {
-    text-align: left;
-    font-size: 25px;
-    font-style: italic;
-  }
-  
-  .about-subtitle-mission {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 16px;
-    margin-right: 20px;
-  }
-  
-  .about-vision {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    flex-direction: row-reverse;
-  }
-  
-  .about-title-vision {
-    text-align: left;
-    font-size: 25px;
-    font-style: italic;
-  }
-  
-  .about-subtitle-vision {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 16px;
-    margin-right: 20px;
-  }
-  
-  .about-values {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    margin-bottom: 30px;
-  }
-  
-  .about-title-values {
-    text-align: left;
-    font-size: 25px;
-    font-style: italic;
-    margin-left: 20px;
-  }
-  
-  .about-subtitle-values {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 16px;
-    margin-right: 20px;
-  }
-
 }
 
 @media screen and (max-width: 480px) {
   .about {
-    width: 90%;
+    width: 100%;
   }
 }
 
