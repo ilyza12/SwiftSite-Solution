@@ -1,4 +1,4 @@
-const NavbarContent = () => {
+const NavbarContent = ({ toggleMenu }) => {
   const data = [
     {
       title: "Home",
@@ -26,10 +26,16 @@ const NavbarContent = () => {
     },
   ];
 
+  function gotoSection(item) {
+    const section = document.querySelector(item.href);
+    section.scrollIntoView({ behavior: "smooth" });
+    if (window.innerWidth < 768) toggleMenu();
+  }
+
   return (
     <ul>
       {data.map((item, i) => (
-        <a href={item.href}>
+        <a onClick={() => gotoSection(item)} key={i}>
           <li>{item.title}</li>
         </a>
       ))}
@@ -59,10 +65,10 @@ export default function Navbar() {
           <p style={{ whiteSpace: "nowrap" }}>Group 22</p>
         </a>
         <div id="mdnavbarcontent" className="sm:hidden">
-          <NavbarContent />
+          <NavbarContent toggleMenu={toggleMenu} />
         </div>
         <div className="sm:hidden">
-          <button class="button3">Login</button>
+          <button className="button3">Login</button>
         </div>
 
         {/* small viewport */}
@@ -94,9 +100,9 @@ export default function Navbar() {
       </div>
 
       <div id="smnavbarcontent">
-        <NavbarContent />
+        <NavbarContent toggleMenu={toggleMenu} />
         <div>
-          <button class="button3">Login</button>
+          <button className="button3">Login</button>
         </div>
       </div>
     </nav>

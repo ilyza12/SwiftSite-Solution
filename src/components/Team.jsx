@@ -46,21 +46,23 @@ function Team() {
             <h2 className="team-title">Meet Our Team</h2>
             <p className="team-subtitle">{message}</p>
           </div>
-          {teamMembers.map((member, index) => (
-            <div key={index} className="team-col">
-              <div className="team-item">
-                <div class="team-img">
-                  <img src={`./img/${member.name.toLowerCase()}.jpg`} alt={member.name} />
-                </div>
+          <div id="teams-container">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="team-col">
+                <div className="team-item">
+                  <div className="team-img">
+                    <img src={`./img/${member.name.toLowerCase()}.jpg`} alt={member.name} />
+                  </div>
 
-                <h3>{member.name}</h3>
-                <div className="team-info">
-                  <p>{member.role}</p>
+                  <h3>{member.name}</h3>
+                  <div className="team-info">
+                    <p>{member.role}</p>
+                  </div>
+                  <p>{member.description}</p>
                 </div>
-                <p>{member.description}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
