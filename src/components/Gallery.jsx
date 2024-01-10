@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 
 const Image = ({ src, alt }) => {
   const [imageSrc, setImageSrc] = useState(src);
+  const imageRef = useRef(null);
 
   function closeModal(e) {
     if (e.target.classList.contains("modal")) {
@@ -22,6 +23,7 @@ const Image = ({ src, alt }) => {
     modal.appendChild(image);
     console.log(modal);
     document.body.appendChild(modal);
+    setImageSrc(imageRef.current.src);
   }
 
   return (
@@ -43,6 +45,30 @@ const Gallery = () => {
     },
     {
       src: "/img/gallery3.png",
+      alt: "Gallery image",
+    },
+    {
+      src: "/img/gallery4.jpg",
+      alt: "Gallery image",
+    },
+    {
+      src: "/img/gallery5.jpg",
+      alt: "Gallery image",
+    },
+    {
+      src: "/img/gallery6.jpg",
+      alt: "Gallery image",
+    },
+    {
+      src: "/img/gallery7.jpg",
+      alt: "Gallery image",
+    },
+    {
+      src: "/img/gallery8.jpg",
+      alt: "Gallery image",
+    },
+    {
+      src: "/img/gallery9.jpg",
       alt: "Gallery image",
     },
   ];
