@@ -62,7 +62,7 @@ export default function Navbar() {
             className="h-8"
             alt="Flowbite Logo"
           />
-          <p style={{ whiteSpace: "nowrap" }}>Group 22</p>
+          <p style={{ whiteSpace: "nowrap" }}>Group 25</p>
         </a>
         <div id="mdnavbarcontent" className="sm:hidden">
           <NavbarContent toggleMenu={toggleMenu} />
