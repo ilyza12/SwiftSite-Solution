@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Launch
 
 ## First step
@@ -15,4 +14,4 @@ npm run dev
 =======
 # SwiftSite-Solution
 Website Development using React
->>>>>>> 6ae5b130771cea817a235878ef145226b711f709
+
