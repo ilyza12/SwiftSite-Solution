@@ -11,7 +11,7 @@ npm install
 ```bash
 npm run dev
 ```
-=======
+
 # SwiftSite-Solution
 Website Development using React
 
