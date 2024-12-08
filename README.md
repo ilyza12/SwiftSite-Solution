@@ -17,7 +17,7 @@ npm run dev
 
 ## Credits
 
-This project was a group work. 
+This project is a group work. 
 
 Members involved:
 1. Shereen Ilyza (me)
